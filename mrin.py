@@ -102,7 +102,7 @@ def reset_attack_limit(message):
         "🚀 *𝗨𝘀𝗲𝗿𝘀 𝗰𝗮𝗻 𝗻𝗼𝘄 𝘀𝘁𝗮𝗿𝘁 𝗻𝗲𝘄 𝗮𝘁𝘁𝗮𝗰𝗸𝘀!* 🚀\n"
         "💀 *𝗣𝗿𝗲𝗽𝗮𝗿𝗲 𝗳𝗼𝗿 𝗗𝗢𝗠𝗜𝗡𝗔𝗧𝗜𝗢𝗡!* 💀\n"
         "━━━━━━━━━━━━━━━━━━━\n"
-        "🔗 *𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬: [PYSCHOxKINGYT](https://t.me/PyschoxDildos) ⚡*"
+        "🔗 *𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬: [@PYSCHOxKINGYT](https://t.me/PyschoxDildos) ⚡*"
     )
 
     response = bot.reply_to(message, response, parse_mode="Markdown", disable_web_page_preview=True)
@@ -281,7 +281,7 @@ def bgmi_command(message):
         )
 
         # Log the attack started message
-        logging.info(f"Attack started by {user_name}: ./mrin {target_ip} {target_port} {default_duration} 1200")
+        logging.info(f"Attack started by {user_name}: ./mrin {target_ip} {target_port} {default_duration}")
 
         # Run the attack command with the default duration and pass the user-provided duration for the finish message
         asyncio.run(run_attack_command_async(target_ip, int(target_port), default_duration, user_duration, user_name))
