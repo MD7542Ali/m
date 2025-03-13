@@ -10,7 +10,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # Telegram bot token and channel ID
 TOKEN = '7887877485:AAF_YWXedsK1Kag5sr25Pb-E7Q4Rz4fhWzA'  # Replace with your actual bot token
 ADMIN_IDS = [930577300]  # Added new admin ID
-CHANNEL_ID = '-1004722192843'  # Replace with your specific channel or group ID
+CHANNEL_ID = '-4722192843'  # Replace with your specific channel or group ID
 # Initialize the bot
 bot = telebot.TeleBot(TOKEN)
 
@@ -80,9 +80,9 @@ def check_status(message):
 
 
 # 🔄 『 𝑹𝒆𝒔𝒆𝒕 𝑨𝒕𝒕𝒂𝒄𝒌 𝑳𝒊𝒎𝒊𝒕𝒔 』🔄
-@bot.message_handler(commands=['reset_TF'])
+@bot.message_handler(commands=['reset_PUSCHO'])
 def reset_attack_limit(message):
-    owner_id = 6674372  # Replace with the actual owner ID
+    owner_id = 930577300  # Replace with the actual owner ID
     if message.from_user.id != owner_id:
         response = (
             "❌🚫 *ACCESS DENIED!* 🚫❌\n\n"
@@ -110,7 +110,7 @@ def reset_attack_limit(message):
 
 # Handler for photos sent by users (feedback received)
 # Define the feedback channel ID
-FEEDBACK_CHANNEL_ID = "-1002657988098"  # Replace with your actual feedback channel ID
+FEEDBACK_CHANNEL_ID = "-2657988098"  # Replace with your actual feedback channel ID
 
 # Store the last feedback photo ID for each user to detect duplicates
 last_feedback_photo = {}
